@@ -62,6 +62,14 @@ public:
     };
 
 private:
+    using Filter = juce::dsp::IIR::Filter<float>;
+    
+    using CutFilter = juce::dsp::ProcessorChain<Filter, Filter, Filter, Filter>; // 12, 24, 36, 48 dB/Oct
+    
+    using MonoChain = juce::dsp::ProcessorChain<CutFilter, Filter, CutFilter>; // LCF, Param, HCF
+    
+    MonoChain leftChain, rightChain;
+    
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SimpleEQAudioProcessor)
 };
