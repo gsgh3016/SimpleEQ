@@ -16,5 +16,5 @@ IDE: Xcode
 - 코드 예시
 ```Cpp
 juce::AudioParameterFloat("Param1", "Param1", 1.f, 1.f);    // Deprecated
-juce::AudioParameterFloat(juce::ParameterID("Param1", 1), "Param1", 1.f, 1.f);    // Deprecated
+juce::AudioParameterFloat(juce::ParameterID("Param1", 1), "Param1", 1.f, 1.f);
 ```
