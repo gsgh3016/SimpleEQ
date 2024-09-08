@@ -1,10 +1,18 @@
 # SimpleEQ
 
 ## 개발 환경
-OS: macOS
-IDE: Xcode
+- OS: macOS
+- IDE: Xcode
 
 \* 참고: [freeCodeCamp](https://youtu.be/i_Iq4_Kd7Rc?si=ZgJYunOA4IbsXTyL)
+
+## 실행 방법
+1. JUCE framework 다운로드 [공식 문서](https://docs.juce.com/master/tutorial_new_projucer_project.html) [공식 다운로드](https://juce.com/download/)
+2. 프로젝트 실행 전 Projucer > Global Paths...에서 다음과 같이 경로 지정
+![Global Path](./Images/GlobalPath.png)
+3. SimpleEQ.jucer 실행
+4. Selected exporter에서 적절한 IDE 선택 후 실행
+5. Standalone으로 프로젝트 빌드 시 실행 가능
 
 ## 발견한 점
 
